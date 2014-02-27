@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript" src="http://cidades-estados-js.googlecode.com/files/cidades-estados-1.2-utf8.js"></script> 
+<script type="text/javascript">
+window.onload = function() {
+  new dgCidadesEstados({
+    estado: document.getElementById('estado'),
+    cidade: document.getElementById('cidade'),
+     estadoVal: '<%=Request("estado") %>',
+  cidadeVal: '<%=Request("cidade") %>'
+  });
+}
+</script>
+</head>
+</head>
+<body>    
+<form id="sistema" name="sistema" method="post" action="">
+<label>Estado</label>
+    <select id="estado" name="estado" ></select>
+  <label>Cidade</label>
+  <select id="cidade" name="cidade"></select>
+</form>
+</body>
+</html>
